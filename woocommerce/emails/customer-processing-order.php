@@ -26,9 +26,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 do_action( 'woocommerce_email_header', $email_heading, $email ); ?>
 
 <center>
-<h2>Congrats! Your order has just been transmitted to the Tucker Toys Holiday Hub for processing!</h2>
-<p>As you read this, the Tucker Elves (or Telves, as they prefer to be called) are building your custom Tucker Toys for shipping.</p>
-<p>Here at Tucker, we are NOT toying around when it comes to appreciating our customers!  If you have any questions for us, or for the Telves, please reach us at <a href="mailto:info@tuckertoys.com">info@tuckertoys.com</a>.</p>
+<h2>Whoa, lookie here!  We got ourselves a toy connoisseur!</h2>
+<p>Thank you for taking part in Transforming Play with us here at Tucker Toys!  Your order has been received and is now being processed!</p>
+<p>Here at Tucker, we are NOT toying around when it comes to appreciating our customers!  If you have any questions for us, please reach us at <a href="mailto:info@tuckertoys.com">info@tuckertoys.com</a>.</p>
 <p>Play Hard! Have Fun!</p>
 </center>
 
