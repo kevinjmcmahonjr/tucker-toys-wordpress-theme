@@ -1,5 +1,9 @@
 <?php
 
+function my_mce_buttons_2($buttons) {/*** Add in a core button that's disabled by default*/
+	$buttons[] = 'sup';$buttons[] = 'sub';return $buttons;}
+add_filter('mce_buttons_2', 'my_mce_buttons_2');
+
 /* Start WordPress JUNK REMOVAL */
 // REMOVE EMOJI ICONS
 remove_action('wp_head', 'print_emoji_detection_script', 7);
