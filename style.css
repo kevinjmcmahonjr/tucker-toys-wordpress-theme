@@ -430,12 +430,12 @@ body h3{
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
-	margin: 15%;
+	margin: 5%;
 	transition: margin .25s ease 0s;
 }
 
 .site-header .product-navigation .menu-item-our-brands .sub-menu a:hover{
-	margin: 5%;
+	margin: 1%;
 	transition: margin .25s ease 0s;
 }
 
