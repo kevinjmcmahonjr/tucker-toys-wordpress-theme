@@ -532,46 +532,40 @@ body h3{
 .dslc-product-details{
 	display: none;
 }
-#dslc-main #dslc-module-20 .dslc-product-extra .dslc-product-add-to-cart,
+.dslc-product-extra .dslc-product-add-to-cart,
 #dslc-main #dslc-module-72 .dslc-product-extra .dslc-product-add-to-cart,
 #dslc-main #dslc-module-104 .dslc-product-extra .dslc-product-add-to-cart{
 	font-size: 24px;
-    color: white;
-    background-color: #104a81;
-    padding: 10px;
-    border-radius: 5px;
+	font-weight: 700;
+	color: white;
+	background-color: #104a81;
+	padding: 10px;
+	border-radius: 5px;
 }
 
-#dslc-main #dslc-module-20 .dslc-product-extra,
-#dslc-main #dslc-module-72 .dslc-product-extra,
-#dslc-main #dslc-module-104 .dslc-product-extra{
+#dslc-main .dslc-product-extra{
 	display: flex;
 	justify-content: center;
 	text-align: center;
 	flex-direction: column;
 }
 
-#dslc-main #dslc-module-20 .dslc-posts-inner .dslc-product-title,
-#dslc-main #dslc-module-72 .dslc-posts-inner .dslc-product-title,
-#dslc-main #dslc-module-104 .dslc-posts-inner .dslc-product-title{
+#dslc-main .dslc-posts-inner .dslc-product-title{
 	margin-bottom: 24px;
 }
-#dslc-main #dslc-module-20 .dslc-posts-inner .dslc-product-title h2,
-#dslc-module-20 .dslc-posts-inner .dslc-product-title h2 a,
-#dslc-main #dslc-module-72 .dslc-posts-inner .dslc-product-title h2,
-#dslc-module-72 .dslc-posts-inner .dslc-product-title h2 a,
-#dslc-main #dslc-module-104 .dslc-posts-inner .dslc-product-title h2,
-#dslc-module-104 .dslc-posts-inner .dslc-product-title h2 a{
+#dslc-main .dslc-posts-inner .dslc-product-title h2,
+#dslc-main .dslc-posts-inner .dslc-product-title h2 a{
 	font-size: 18px;
 	vertical-align: -webkit-baseline-middle;
 	text-align: left;
+	color: #636363;
 }
 .woocommerce-Price-amount amount{
 	font-size: 18px;
 }
-#dslc-main #dslc-module-20 .dslc-product-extra .dslc-product-add-to-cart .dslc-icon.dslc-icon-shopping-cart,
-#dslc-main #dslc-module-72 .dslc-product-extra .dslc-product-add-to-cart .dslc-icon.dslc-icon-shopping-cart,
-#dslc-main #dslc-module-104 .dslc-product-extra .dslc-product-add-to-cart .dslc-icon.dslc-icon-shopping-cart{
+#dslc-main .dslc-product-extra .dslc-product-add-to-cart .dslc-icon.dslc-icon-shopping-cart,
+#dslc-main .dslc-product-extra .dslc-product-add-to-cart .dslc-icon.dslc-icon-shopping-cart,
+#dslc-main .dslc-product-extra .dslc-product-add-to-cart .dslc-icon.dslc-icon-shopping-cart{
 	margin-right: 8px;
 }
 
