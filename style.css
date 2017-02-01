@@ -388,27 +388,35 @@ body h3{
 /* Site Navigation Brands */
 
 .site-header .product-navigation .menu-item-our-brands .menu-item-e-z-grip a{
-	background-image: url('images/e-z-grip-logo.png');
+	background-image: url('images/e-z-grip-logo-for-navigation.png');
 }
 
 .site-header .product-navigation .menu-item-our-brands .menu-item-phlat-ball a{
-	background-image: url('images/phlat-ball-logo.png');
+	background-image: url('images/phlat-ball-logo-for-navigation.png');
 }
 
 .site-header .product-navigation .menu-item-our-brands .menu-item-zoingo-boingo a{
-	background-image: url('images/zoingo-boingo-logo.png');
+	background-image: url('images/zoingo-boingo-logo-for-navigation.png');
 }
 
 .site-header .product-navigation .menu-item-our-brands .menu-item-crush-it a{
-	background-image: url('images/crush-it-logo.png');
+	background-image: url('images/crush-it-logo.png-for-navigation');
 }
 
 .site-header .product-navigation .menu-item-our-brands .menu-item-zb-freestyle-board a{
-	background-image: url('images/zb-freestyle-board-logo.png');
+	background-image: url('images/zb-freestyle-board-logo-for-navigation.png');
 }
 
 .site-header .product-navigation .menu-item-our-brands .menu-item-trick-shot a{
-	background-image: url('images/trick-shot-logo.png');
+	background-image: url('images/trick-shot-sports-logo-for-navigation.png');
+}
+
+.site-header .product-navigation .menu-item-our-brands .menu-item-kite-a-pult a{
+	background-image: url('images/kite-a-pult-logo-for-navigation.png');
+}
+
+.site-header .product-navigation .menu-item-our-brands .menu-item-disc-jock-e a{
+	background-image: url('images/disc-jock-e-logo-for-navigation.png');
 }
 
 .site-header .product-navigation .menu-item-our-brands .sub-menu li{
