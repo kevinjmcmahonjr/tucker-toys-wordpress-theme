@@ -112,7 +112,7 @@ function tucker_toys_theme_load_scripts() {
 } add_action( 'wp_enqueue_scripts', 'tucker_toys_theme_load_scripts' );
 
 function kjmjr_add_google_fonts(){
-	wp_enqueue_style( 'kjmjr_google_fonts', 'https://fonts.googleapis.com/css?family=Luckiest+Guy|Roboto:300,400,700|Bitter:400,400i,700' );
+	wp_enqueue_style( 'kjmjr_google_fonts', 'https://fonts.googleapis.com/css?family=Luckiest+Guy' );
 	wp_enqueue_style('font-awesome', get_stylesheet_directory_uri() . '/css/font-awesome.min.css');
 }
 add_action('wp_enqueue_scripts', 'kjmjr_add_google_fonts');
