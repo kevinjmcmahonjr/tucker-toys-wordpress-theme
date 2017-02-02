@@ -453,6 +453,7 @@ sub{
 .site-footer{
 	width: 100%;
 	padding-top: 40px;
+	padding-bottom: 20px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -465,7 +466,6 @@ sub{
 
 @media screen and (min-width: 960px){
 	.site-footer{
-		height: 240px;
 		flex-direction: row;
 		align-items: flex-start;
 	}
