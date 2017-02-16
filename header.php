@@ -19,31 +19,71 @@
 	<section class="site-logo">
     	<h1><a href="<?php echo get_home_url(); ?>"><?php bloginfo('name'); ?> <?php bloginfo( 'description' ); ?></a></h1>
     </section>
-    <nav class="product-navigation">
-    <label for="touch-drop" class="toggle">Menu</label>
-    <input type="checkbox" id="touch-drop">
-    	<?php
-		$main_menu_parameters = array(
-			'theme_location'	=> 'Main Menu',
-			'menu'				=> '',
-			'container'			=> '',
-			'container-class'	=> '',
-			'container-id'		=> '',
-			'menu-class'		=> '',
-			'menu-id'			=> '',
-			'echo'				=> false,
-			'fallback_cb'		=> '',
-			'before'			=> '',
-			'after'				=> '',
-			'before'			=> '',
-			'link_before'		=> '',
-			'link_after'		=> '',
-			'items_wrap'		=> '<ul>%3$s</ul>',
-			'depth'				=> 0,
-			'walker'			=> ''
-		);
-		echo wp_nav_menu( $main_menu_parameters );
-		?>
+    <nav class="main-navigation">
+    <label for="touch-drop-menu" class="toggle">Menu</label>
+    <input type="checkbox" id="touch-drop-menu">
+    	<ul>
+        	<li class="menu-item-our-brands">
+            	<label for="touch-drop-brands" class="toggle">Our Brands</label>
+                <!-- <a href="#">Our Brands</a> -->
+                <input type="checkbox" id="touch-drop-brands">
+                	<?php
+					$header_brands_menu_parameters = array(
+						'theme_location'	=> 'Header Brands Menu',
+						'menu'				=> '',
+						'container'			=> '',
+						'container-class'	=> 'sub-menu',
+						'container-id'		=> '',
+						'menu-class'		=> '',
+						'menu-id'			=> '',
+						'echo'				=> false,
+						'fallback_cb'		=> '',
+						'before'			=> '',
+						'after'				=> '',
+						'before'			=> '',
+						'link_before'		=> '',
+						'link_after'		=> '',
+						'items_wrap'		=> '<ul class="sub-menu">%3$s</ul>',
+						'depth'				=> 0,
+						'walker'			=> ''
+					);
+					echo wp_nav_menu( $header_brands_menu_parameters );
+					?>
+            </li>
+            <li class="menu-item-press-room">
+            	<label for="touch-drop-press" class="toggle">Press Room</label>
+                <!-- <a href="#">Press Room</a> -->
+                <input type="checkbox" id="touch-drop-press">
+                	<?php
+					$header_press_menu_parameters = array(
+						'theme_location'	=> 'Header Press Menu',
+						'menu'				=> '',
+						'container'			=> '',
+						'container-class'	=> 'sub-menu',
+						'container-id'		=> '',
+						'menu-class'		=> '',
+						'menu-id'			=> '',
+						'echo'				=> false,
+						'fallback_cb'		=> '',
+						'before'			=> '',
+						'after'				=> '',
+						'before'			=> '',
+						'link_before'		=> '',
+						'link_after'		=> '',
+						'items_wrap'		=> '<ul class="sub-menu">%3$s</ul>',
+						'depth'				=> 0,
+						'walker'			=> ''
+					);
+					echo wp_nav_menu( $header_press_menu_parameters );
+					?>
+            </li>
+            <li>
+            	<a href="/the-tucker-mission/">Our Story</a>
+            </li>
+            <li>
+            	<a href="/shop/">Shop</a>
+            </li>
+        </ul>
     </nav>
     <section class="side-navigation">
     	<section class="social-navigation">

@@ -48,6 +48,8 @@ if (function_exists('add_theme_support')){
 }
 register_nav_menus( array(
 	'Main Menu' => 'Main Menu in site Header',
+	'Header Brands Menu' => 'Brands Menu in Site Header',
+	'Header Press Menu' => 'News Menu in Site Header',
 	'Footer Brands' => 'Brands list in site footer',
 	'Footer Information' => 'Information list in site footer',
 ));

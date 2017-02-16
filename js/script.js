@@ -13,3 +13,14 @@ $(document).ready(function() {
 		item: 6,
     });
 });
+
+$(document).ready(touchNavEnable);
+function touchNavEnable(){
+	console.log("This is working");
+	$('input[type=checkbox][id^="touch-drop"]').change(function(){
+		$(this).prev().toggleClass("close-icon", this.checked);
+	});
+	$('.main-navigation>ul>li>input[type=checkbox][id^="touch-drop"]').change(function(){
+		$(this).prev().toggleClass("sub-menu-focus", this.checked);
+	});
+}
