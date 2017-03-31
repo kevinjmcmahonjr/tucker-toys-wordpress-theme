@@ -330,6 +330,9 @@ sub{
 		display: flex;
 		flex-direction: column;
 		justify-content: space-around;
+		height: calc(100% - 94px);
+	}
+	.logged-in #touch-drop-menu:checked + ul{
 		height: calc(100% - 140px);
 	}
 	
