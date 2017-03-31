@@ -336,6 +336,9 @@ sub{
 	#touch-drop-menu:checked + ul > li > label.sub-menu-focus{
 		position: absolute;
 		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
 		height: 70px;
 		display: flex;
 		align-items: center;
