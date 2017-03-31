@@ -446,6 +446,7 @@ sub{
 	display: flex;
     justify-content: center;
     align-items: center;
+	height: 100%;
 }
 
 .site-header .main-navigation ul li:not(.menu-item-our-brands) .sub-menu li a{
