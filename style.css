@@ -325,7 +325,7 @@ sub{
 		position: fixed;
 		left: 0;
 		right: 0;
-		top: 140px;
+		top: 100px;
 		background-color: #012841;
 		display: flex;
 		flex-direction: column;
@@ -333,6 +333,7 @@ sub{
 		height: calc(100% - 94px);
 	}
 	.logged-in #touch-drop-menu:checked + ul{
+		top: 140px;
 		height: calc(100% - 140px);
 	}
 	
