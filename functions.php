@@ -103,7 +103,10 @@ if ( ! function_exists( 'lct_theme_setup' ) ) {
 
 // Load JS and CSS files
 function tucker_toys_theme_load_scripts() {
-	wp_enqueue_style( 'tucker-toys-stylesheet', get_stylesheet_uri(), array(), '1.0' );
+	if (file_exists( get_stylesheet_directory() . 'style.css' )){
+		$cachBustSyleCSS = date("Y m d", filemtime( get_stylesheet_directory() . 'style.css' ));
+	}
+	wp_enqueue_style( 'tucker-toys-stylesheet', get_stylesheet_uri(), array(), $cachBustSyleCSS, 'all' );
 	wp_enqueue_style( 'lightslider-stylesheet', get_template_directory_uri() . '/css/lightslider.min.css' , array(), '1.0' );
 	wp_deregister_script('jquery');
 	// wp_register_script('jquery', ('https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js'), true, null);
