@@ -707,3 +707,7 @@ sub{
     margin-bottom: 10px;
     font-weight: 600;
 }
+
+.dslc-accordion-item{
+	cursor: pointer;
+}
