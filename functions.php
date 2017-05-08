@@ -130,4 +130,17 @@ add_action('wp_enqueue_scripts', 'kjmjr_add_google_fonts');
 	);
 }
 add_filter( 'dslc_available_fonts', array( DSLC_Scripts, 'live_composer_font_restrict' )); */
+
+// Remove "Read More" make it "Out of Stock" in WooCommerce
+if (!function_exists('woocommerce_template_loop_add_to_cart')) {
+    function woocommerce_template_loop_add_to_cart() {
+        global $product;
+        if (!$product->is_in_stock()) {
+            echo '<a href="'.get_permalink().'" rel="nofollow" class="button add_to_cart_button more_info_button out_stock_button">Out of Stock</a>';
+		}	
+		else{
+			woocommerce_get_template('loop/add-to-cart.php');
+		}
+    }
+}
 ?>
