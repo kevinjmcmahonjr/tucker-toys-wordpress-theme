@@ -146,5 +146,13 @@ if (!function_exists('woocommerce_template_loop_add_to_cart')) {
 
 
 // Trademark Formatting
+add_filter('the_content', 'trademark_formatting');
+//add_filter('the_title', 'trademark_formatting');
+function trademark_formatting( $content ){
+	$trademark_symbol_codes = array ("™", "&#8482;", "&trade;");
+	$trademark_plain_text = '<sup class="trademark-symbol">TM</sup>';
+	$content = str_replace($trademark_symbol_codes, $trademark_plain_text, $content);
+}
+
 
 ?>
