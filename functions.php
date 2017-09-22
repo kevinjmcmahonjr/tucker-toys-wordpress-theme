@@ -121,4 +121,14 @@ add_action('wp_enqueue_scripts', 'kjmjr_add_google_fonts');
 	);
 }
 add_filter( 'dslc_available_fonts', array( DSLC_Scripts, 'live_composer_font_restrict' )); */
+
+// Trademark Formatting
+add_filter('the_content', 'trademark_formatting');
+add_filter('the_title', 'trademark_formatting');
+function trademark_formatting( $content ){
+	$trademark_symbol_codes = array ("™", "&#8482;", "&trade;");
+	$trademark_plain_text = "<sup class="trademark-symbol">TM</sup>"
+	$content = str_replace($trademark_symbol_codes, $trademark_plain_text, $content);
+}
+
 ?>
